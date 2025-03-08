@@ -1,10 +1,10 @@
 "use client"; // ✅ 클라이언트 컴포넌트 설정
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 export default function HeroSection() {
-  const startDate = new Date("2026-04-25T12:20:00");
+  const startDate = useRef(new Date("2026-04-25T12:20:00"));
 
   const [time, setTime] = useState({
     days: 0,
@@ -16,7 +16,7 @@ export default function HeroSection() {
   useEffect(() => {
     const updateTime = () => {
       const now = new Date();
-      const diff = startDate.getTime() - now.getTime();
+      const diff = startDate.current.getTime() - now.getTime();
 
       setTime({
         days: Math.floor(diff / (1000 * 60 * 60 * 24)),

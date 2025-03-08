@@ -1,6 +1,5 @@
 "use client"; // ✅ 클라이언트 컴포넌트 설정
 
-import { useState } from "react";
 import Calendar from "react-calendar"; // 📅 React Calendar 라이브러리 추가
 import "react-calendar/dist/Calendar.css"; // 기본 스타일 유지하면서 Tailwind로 오버라이드
 
