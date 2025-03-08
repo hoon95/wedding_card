@@ -1,23 +1,22 @@
-import {
-  MapPin,
-  TrainFront,
-  BusFront,
-  Phone,
-  ParkingCircle,
-} from "lucide-react"; // 🚇 `Subway` 대신 `TrainFront` 사용
+import { MapPin, TrainFront, BusFront, ParkingCircle } from "lucide-react";
 import Image from "next/image";
 
 export default function LocationSection() {
   return (
-    <section id="location" className="py-16 bg-white text-center">
+    <section
+      id="location"
+      className="flex flex-col items-center py-16 bg-white text-center"
+    >
       <h2 className="text-3xl font-bold text-gray-800">오시는 길</h2>
 
       {/* 🏢 장소 정보 */}
-      <div className="mt-10 max-w-2xl mx-auto text-left text-gray-700">
+      <div className="mt-10 max-w-2xl text-left text-gray-700">
         <div className="flex items-center space-x-2">
           <MapPin size={24} className="text-red-500" />
           <h3 className="text-xl font-semibold text-gray-800">상록아트홀</h3>
         </div>
+
+        <p>- 이 곳은 지도가 들어갈 곳입니다 -</p>
 
         {/* 🗺 지도 바로가기 (네이버, 카카오, TMAP) */}
         <div className="mt-6 flex justify-center space-x-10">

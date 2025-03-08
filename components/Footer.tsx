@@ -25,22 +25,17 @@ export default function Footer() {
         <h3 className="text-lg font-semibold text-white text-center">
           📢 안내사항
         </h3>
-        <ul className="mt-4 space-y-2">
-          <li>✔️ 예식은 정시에 시작되오니 여유 있게 도착해 주세요.</li>
-          <li>
-            ✔️ 건물 내 주차 공간이 혼잡할 수 있으니 대중교통 이용을
-            권장드립니다.
-          </li>
-          <li>
-            ✔️ 축하 화환은 정중히 사양하오니, 따뜻한 마음만 전해 주시면
-            감사하겠습니다.
-          </li>
+        <ul className="mt-4 space-y-2 flex flex-col items-center">
+          <li>✔️ 안내사항 1</li>
+          <li>✔️ 안내사항 2</li>
+          <li>✔️ 안내사항 3</li>
         </ul>
       </div>
 
       {/* 연락처 */}
       <div className="mt-8 text-xs opacity-70">
-        <p>문의: 신랑 010-1234-5678 | 신부 010-8765-4321</p>
+        <p>신랑 010-1234-5678</p>
+        <p>신부 010-1234-5678</p>
       </div>
     </footer>
   );
