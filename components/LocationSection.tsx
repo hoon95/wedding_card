@@ -65,13 +65,20 @@ export default function LocationSection() {
             <TrainFront size={20} className="text-blue-500" />
             <h4 className="font-semibold">지하철</h4>
           </div>
-          <p className="ml-6 text-gray-600">
-            <span className="font-semibold">2호선 역삼역</span> 8번 출구 도보
-            5분
+          <p className="ml-6 text-gray-600 flex items-center">
+            <span className="flex items-center justify-center w-5 h-5 rounded-full bg-green-500 text-white font-bold text-sm mr-1">
+              2
+            </span>
+            <span className="font-semibold">역삼역</span>
+            <span className="ml-2">8번 출구 도보 5분</span>
           </p>
-          <p className="ml-6 text-gray-600">
-            <span className="font-semibold">2호선 강남역</span> 2번 출구 도보
-            10분
+
+          <p className="ml-6 text-gray-600 flex items-center">
+            <span className="flex items-center justify-center w-5 h-5 rounded-full bg-green-500 text-white font-bold text-sm mr-1">
+              2
+            </span>
+            <span className="font-semibold">강남역</span>
+            <span className="ml-2">2번 출구 도보 10분</span>
           </p>
         </div>
 
