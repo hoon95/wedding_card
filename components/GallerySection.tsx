@@ -8,17 +8,14 @@ export default function GallerySection() {
   ];
 
   return (
-    <section
-      id="gallery"
-      className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center"
-    >
+    <section id="gallery" className="py-16 bg-gray-50 text-center">
       <h2 className="text-3xl font-bold text-gray-800">갤러리</h2>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 px-4 items-center">
         {images.map((src, index) => (
           <Image
             key={index}
             src={src}
-            alt="갤러리"
+            alt={`갤러리 이미지 ${index + 1}`}
             width={300}
             height={200}
             className="rounded-lg shadow-md"

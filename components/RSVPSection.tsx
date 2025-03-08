@@ -21,7 +21,7 @@ export default function RSVPSection() {
   return (
     <section
       id="rsvp"
-      className="min-h-screen flex flex-col justify-center items-center bg-gray-50 text-center py-20"
+      className="flex flex-col justify-center items-center bg-gray-50 text-center py-20"
     >
       <h2 className="text-3xl font-bold text-gray-800">참석 여부 확인</h2>
       <p className="mt-2 text-gray-600">참석 여부를 알려주세요!</p>
